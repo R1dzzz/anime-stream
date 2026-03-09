@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RLC Anime Stream</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="min-h-screen">
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center p-4 glassmorphic">
+    <img src="images/logo.png" alt="RLC Anime Stream" class="h-10">
+    <ul class="flex space-x-4">
+      <li><a href="index.html" class="hover:neon-text">Home</a></li>
+      <li><a href="index.html#trending" class="hover:neon-text">Trending</a></li>
+      <li><a href="index.html#popular" class="hover:neon-text">Popular</a></li>
+      <li><a href="#" class="hover:neon-text">Genres</a></li> <!-- Placeholder -->
+      <li><a href="search.html" class="hover:neon-text">Search</a></li>
+      <li><a href="about.html" class="hover:neon-text">About Developer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner Slider -->
+  <div id="hero-banner" class="overflow-hidden flex transition-transform duration-500" style="width: 300%;"></div>
+
+  <!-- Trending -->
+  <section id="trending">
+    <h2 class="text-2xl p-4">Trending Anime</h2>
+    <div id="trending-grid" class="grid grid-cols-5 gap-4 p-4"></div>
+  </section>
+
+  <!-- Popular -->
+  <section id="popular">
+    <h2 class="text-2xl p-4">Popular Anime</h2>
+    <div id="popular-grid" class="grid grid-cols-5 gap-4 p-4"></div>
+  </section>
+
+  <!-- Recently Updated -->
+  <section id="recent">
+    <h2 class="text-2xl p-4">Recently Updated</h2>
+    <div id="recent-grid" class="grid grid-cols-5 gap-4 p-4"></div>
+  </section>
+
+  <!-- Continue Watching (Bonus) -->
+  <section id="continue-watching">
+    <h2 class="text-2xl p-4">Continue Watching</h2>
+    <div id="continue-grid" class="grid grid-cols-5 gap-4 p-4">
+      <!-- JS to load from localStorage -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center glassmorphic">
+    <p>RLC Anime Stream - Built by Ridz - Rogue Logic Creations</p>
+  </footer>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

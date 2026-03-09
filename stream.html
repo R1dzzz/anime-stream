@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream - RLC Anime Stream</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="min-h-screen flex">
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center p-4 glassmorphic absolute top-0 w-full">
+    <img src="images/logo.png" alt="RLC Anime Stream" class="h-10">
+    <ul class="flex space-x-4">
+      <li><a href="index.html" class="hover:neon-text">Home</a></li>
+      <li><a href="index.html#trending" class="hover:neon-text">Trending</a></li>
+      <li><a href="index.html#popular" class="hover:neon-text">Popular</a></li>
+      <li><a href="#" class="hover:neon-text">Genres</a></li>
+      <li><a href="search.html" class="hover:neon-text">Search</a></li>
+      <li><a href="about.html" class="hover:neon-text">About Developer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Video Player -->
+  <div class="flex-grow p-4">
+    <video id="video-player" controls autoplay class="w-full h-auto" controlsList="nodownload" fullscreen></video>
+    <div class="flex space-x-4 mt-4">
+      <button id="prev-ep" class="bg-cyan-500 p-2 rounded">Previous</button>
+      <button id="next-ep" class="bg-cyan-500 p-2 rounded">Next</button>
+    </div>
+  </div>
+
+  <!-- Episode Sidebar -->
+  <aside id="episode-sidebar" class="w-64 p-4 glassmorphic overflow-y-auto"></aside>
+
+  <footer class="p-4 text-center glassmorphic absolute bottom-0 w-full">
+    <p>RLC Anime Stream - Built by Ridz - Rogue Logic Creations</p>
+  </footer>
+
+  <script type="module" src="js/stream.js"></script>
+</body>
+</html>
